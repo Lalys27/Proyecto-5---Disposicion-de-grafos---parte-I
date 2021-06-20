@@ -988,7 +988,7 @@ class Grafo:
             print(nodo)
 
 class GRAFO_GUI:
-    REFRESH = 5
+    REFRESH = 20
     SIZE_SCREEN = 600, 600
     BGCOLOR = (255,255,255)
     NODECOLOR = (204,0,255)
@@ -1181,7 +1181,7 @@ def pygame_start(grafo, ltAristas, title):
             grafoGUI.calcularDistancia()
             grafoGUI.print_distancia = False
         #Cuando se traba
-        i_refresh = pygame_refresh(i_refresh, 200)
+        i_refresh = pygame_refresh(i_refresh, 50)
         #pygame.display.flip()
 
 def pygame_refresh(i_refresh, max):
@@ -1197,9 +1197,9 @@ oGrafo = Grafo()
 #oGrafo.modeloMalla(param_num_i = 10, param_num_j = 50)
 #oGrafo.modeloErdosNRenyi(num_nodos = 500, max_num_aristas = 4)
 #oGrafo.modeloGilbert(num_nodos = 500, probabilidad = 0.01)
-oGrafo.modeloGeografico(num_nodos = 500, w_rec = 40, h_rec = 20, prec = 4, r_distancia = 10)
-#oGrafo.modeloBarabasiAlbert(num_nodos = 400, max_grado = 5)
-#oGrafo.modeloDorogovtsevMendes(num_nodos = 400)
+#oGrafo.modeloGeografico(num_nodos = 500, w_rec = 40, h_rec = 20, prec = 4, r_distancia = 10)
+#oGrafo.modeloBarabasiAlbert(num_nodos = 500, max_grado = 5)
+oGrafo.modeloDorogovtsevMendes(num_nodos = 500)
 """
 oGrafo.modeloGrafoBFS()
 oGrafo.modeloGrafoDFS_R()
