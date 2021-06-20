@@ -26,7 +26,7 @@ https://github.com/Lalys27/Proyecto-5---Disposicion-de-grafos---parte-I.git
 
 	*Modelo geográfico simple.
 	https://youtu.be/IWBZ3RNREc4
-	https://youtu.be/blQ9cRzRiFE
+	https://youtu.be/SgefZs_0nfY
 
 
 	*Modelo Barabási-Albert
